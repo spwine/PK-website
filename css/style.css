@@ -69,13 +69,26 @@ header {
   line-height: normal;
   text-decoration: none;
 
-  border-radius: 0.8rem;
-  border: 0.5px solid #0feffd;
+  border-radius: 0.8rem !important;
+  /* border: 0.5px solid #0feffd; */
   background: rgba(29, 29, 29, 0.4);
   box-shadow: 0px 4rem 4rem 8px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(4px);
 
   padding: 1.2rem 2.4rem;
+
+  display: inline-block;
+  border-width: 0.5px;
+  border-style: solid;
+  /* Use a gradient border */
+  border-image: linear-gradient(
+    130deg,
+    #0feffd 3.48%,
+    #52ff00 53.58%,
+    rgba(15, 239, 253, 0) 67.82%
+  );
+  border-image-slice: 1;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-service {
