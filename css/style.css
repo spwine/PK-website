@@ -1,0 +1,91 @@
+/********** Header section ************/
+
+header {
+  background: #070709;
+  padding: 0 2.8rem;
+}
+
+.logo {
+  height: 2.8rem;
+  margin: 3.6rem 0;
+}
+/********** Hero section ************/
+
+.hero-section {
+  background: #070709;
+  height: calc(100vh - 102.5px);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-txt-box {
+  padding: 0 2.8rem;
+  text-align: center;
+}
+
+.hero-opening-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding-bottom: 4rem;
+
+  text-align: center;
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem; /* 125% */
+
+  background: radial-gradient(
+    70.71% 70.71% at 50% 50%,
+    rgba(235, 228, 225, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-body-text-top {
+  padding-bottom: 2.4rem;
+}
+
+.hero-btn-container {
+  padding-top: 5.2rem;
+  padding-bottom: 4.4rem;
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+
+  border-radius: 0.8rem;
+  border: 0.5px solid #0feffd;
+  background: rgba(29, 29, 29, 0.4);
+  box-shadow: 0px 4rem 4rem 8px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(4px);
+
+  padding: 1.2rem 2.4rem;
+}
+
+.btn-service {
+  margin-right: 2rem;
+}
+
+.hero-img-box {
+  width: 100vw;
+}
+
+.hero-img {
+  width: 100%;
+}
