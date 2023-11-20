@@ -221,7 +221,6 @@ header {
 
 .contact-head-text {
   color: #606060;
-  line-height: 2.4rem; /* 150% */
 
   width: 20rem;
   margin: 0 auto;
@@ -279,9 +278,6 @@ textarea:focus {
   display: none;
   opacity: 0;
   visibility: hidden;
-
-  padding: 5.6rem 3.6rem 8rem 3.6rem;
-  background: #070709;
 }
 
 /********** Footer ************/
@@ -293,6 +289,12 @@ footer {
 
 .footer-top {
   padding-bottom: 8rem;
+}
+
+.footer-top-desktop {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .info-header,
@@ -308,6 +310,10 @@ footer {
   line-height: normal;
 
   padding-bottom: 2rem;
+}
+
+.info-text {
+  font-weight: 300;
 }
 
 .info-head-container {

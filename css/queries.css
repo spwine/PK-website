@@ -100,3 +100,177 @@
     width: fit-content;
   }
 }
+
+@media (min-width: 90em) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 0 8rem;
+  }
+
+  .logo {
+    margin: 7.2rem 0;
+  }
+
+  /********** Hero section ************/
+
+  .hero-opening-text {
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    width: 53.4rem;
+    padding-bottom: 9.6rem;
+  }
+
+  .hero-txt-box {
+    padding: 0 8rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  .hero-body-text-top {
+    padding-bottom: 5.6rem;
+    line-height: 3.2rem;
+    width: 60rem;
+  }
+
+  .btn {
+    height: 7.2rem;
+    font-size: 2rem;
+    padding: 2.4rem;
+  }
+
+  /********** Service section ************/
+
+  .service-header {
+    width: 88rem;
+    line-height: 5.6rem;
+    padding-bottom: 7.2rem;
+  }
+
+  .service-section {
+    padding: 8.8rem 8rem;
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
+  .service-outside-layer {
+    padding-bottom: 6.4rem;
+  }
+
+  .service-inside-layer {
+    padding: 2.4rem 2.4rem 5.6rem;
+  }
+
+  .service-detail {
+    font-size: 1.6rem;
+  }
+
+  /********** Contact section ************/
+
+  .contact-section {
+    max-width: 144rem;
+    padding: 0 8rem 8.8rem 8rem;
+    margin: 0 auto;
+  }
+
+  .contact-head {
+    padding-bottom: 4rem;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 5.6rem;
+  }
+
+  .contact-info-container {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+    background-color: black;
+    padding: 4rem;
+    border-radius: 8px;
+  }
+
+  .info-head-container {
+    padding-bottom: 9.6rem;
+  }
+
+  .info-detail {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .form-col-desktop {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .col-form {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 4rem;
+  }
+
+  input[type="submit"] {
+    float: right;
+    width: 20.8rem;
+    margin: 0;
+  }
+
+  /********** Footer section ************/
+
+  footer {
+    padding: 6.4rem 8rem;
+  }
+
+  .footer-top {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .footer-top-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    opacity: 1;
+    visibility: visible;
+
+    width: 57rem;
+    padding-bottom: 12rem;
+  }
+
+  .company-name-footer {
+    color: #ffffff93;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .footer-company-info-footer {
+    color: #ffffff93;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
