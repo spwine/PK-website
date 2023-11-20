@@ -14,7 +14,7 @@ header {
 
 .hero-section {
   background: #070709;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 106rem;
 }
 
@@ -40,7 +40,6 @@ header {
   padding-bottom: 4rem;
 
   text-align: center;
-  font-family: Inter;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 600;
@@ -202,6 +201,153 @@ header {
 .service-detail {
   color: #606060;
   line-height: 2.4rem; /* 150% */
-
   text-align: left;
+}
+
+/********** Contact section ************/
+
+.contact-section {
+  padding: 0 2.8rem 9.6rem 2.8rem;
+}
+
+.contact-head {
+  padding-bottom: 2rem;
+}
+
+.contact-head-text {
+  color: #606060;
+  line-height: 2.4rem; /* 150% */
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+
+  color: #8d8d8d;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc; /* Add a border only at the bottom */
+  outline: none; /* Remove default input focus outline */
+}
+
+input[type="submit"] {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  margin-top: 3.2rem;
+  width: 16.8rem;
+  border-radius: 4px;
+  background: #000;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Optional: Style the input/textarea on focus */
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid #4caf50;
+}
+
+.contact-info-container {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+
+  padding: 5.6rem 3.6rem 8rem 3.6rem;
+  background: #070709;
+}
+
+/********** Footer ************/
+
+footer {
+  padding: 5.6rem 3.6rem 8rem 3.6rem;
+  background: #070709;
+}
+
+.footer-top {
+  padding-bottom: 8rem;
+}
+
+.info-header,
+.info-text {
+  text-align: left;
+}
+
+.info-header {
+  color: #fff;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  padding-bottom: 2rem;
+}
+
+.info-head-container {
+  padding-bottom: 5.6rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.8rem;
+}
+
+.info-detail {
+  text-align: left;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-tel,
+.contact-email {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-footer {
+  height: 3.2rem;
+  width: fit-content;
+}
+
+.copyright {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
