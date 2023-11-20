@@ -1,0 +1,102 @@
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  /********** Header section ************/
+
+  header {
+    padding: 0 4.8rem;
+    background: rgb(7 7 9 / 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .logo {
+    height: 5.6rem;
+    margin: 4.8rem 0;
+  }
+
+  /********** Hero section ************/
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero-opening-text {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    width: 36rem;
+    background: radial-gradient(
+      70.71% 70.71% at 50% 50%,
+      rgba(235, 228, 225, 0.6) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-txt-box {
+    padding: 0 5.6rem;
+  }
+
+  .hero-body-text {
+    text-align: left;
+    line-height: 2.4rem;
+  }
+
+  .hero-body-text-below {
+    width: unset;
+  }
+
+  .hero-img-box {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-btn-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    height: 4.8rem;
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+  }
+
+  /********** Service section ************/
+
+  .service-section {
+    padding: 6.4rem 5.6rem;
+  }
+
+  .service-header {
+    padding-bottom: 4.8rem;
+    width: 68rem;
+    line-height: 4rem;
+  }
+
+  .services-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .service-text-container {
+    min-width: unset;
+  }
+
+  /********** Contact section ************/
+
+  .contact-head-text {
+    width: fit-content;
+  }
+}
