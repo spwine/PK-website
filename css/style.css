@@ -70,6 +70,8 @@ header {
 }
 
 .btn {
+  padding: 1.2rem 2.4rem;
+  position: relative;
   color: #fff;
   text-align: center;
   font-size: 1.2rem;
@@ -77,27 +79,23 @@ header {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+}
 
-  border-radius: 0.8rem !important;
-  /* border: 0.5px solid #0feffd; */
-  background: rgba(29, 29, 29, 0.4);
-  box-shadow: 0px 4rem 4rem 8px rgba(0, 0, 0, 0.16);
-  backdrop-filter: blur(4px);
-
-  padding: 1.2rem 2.4rem;
-
-  display: inline-block;
-  border-width: 0.5px;
-  border-style: solid;
-  /* Use a gradient border */
-  border-image: linear-gradient(
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(
     130deg,
     #0feffd 3.48%,
-    #52ff00 53.58%,
-    rgba(15, 239, 253, 0) 67.82%
+    #52ff00 68.31%,
+    rgba(15, 239, 253, 0) 86.48%
   );
-  border-image-slice: 1;
-  transition: background-color 0.3s, color 0.3s;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .btn-service {
@@ -119,7 +117,9 @@ header {
 }
 
 .service-header {
-  padding-bottom: 2.4rem;
+  padding-bottom: 2.8rem;
+  width: 32rem;
+  margin: 0 auto;
 }
 
 .services-container {
@@ -165,7 +165,7 @@ header {
   height: min-content;
   justify-content: flex-start;
   overflow: hidden;
-  padding: 2.4rem 2.4rem 4rem;
+  padding: 1.6rem 1.6rem 4rem;
   position: relative;
   transform: perspective(120rem);
   will-change: var(--framer-will-change-override, transform);
@@ -202,6 +202,7 @@ header {
   color: #606060;
   line-height: 2.4rem; /* 150% */
   text-align: left;
+  font-weight: 300;
 }
 
 /********** Contact section ************/
@@ -212,11 +213,17 @@ header {
 
 .contact-head {
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .contact-head-text {
   color: #606060;
   line-height: 2.4rem; /* 150% */
+
+  width: 20rem;
+  margin: 0 auto;
 }
 
 form {
