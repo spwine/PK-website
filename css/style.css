@@ -271,6 +271,11 @@ button[type="button"] {
   font-weight: 500;
 }
 
+button:hover {
+  border: #4caf50;
+  background: #4caf50;
+}
+
 /* Optional: Style the input/textarea on focus */
 input:focus,
 textarea:focus {
@@ -349,7 +354,7 @@ footer {
 .contact-email {
   text-decoration: none;
   color: #fff;
-  border-bottom: 1px solid #4caf50;
+  border-bottom: 1px solid #fff;
 }
 .contact-tel:hover,
 .contact-email:hover {
