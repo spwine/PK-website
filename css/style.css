@@ -15,6 +15,7 @@ header {
 .hero-section {
   background: #070709;
   height: 100vh;
+  min-height: 106rem;
 }
 
 .hero {
