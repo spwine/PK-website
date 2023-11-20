@@ -196,6 +196,7 @@ header {
   padding: 0;
   position: relative;
   width: 100%;
+  min-width: 33.6rem;
 }
 
 .service-detail {
