@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $lastName = $_POST["lastName"];
   $email = $_POST["email"];
   $telephone = $_POST["phone"];
-  $subject = $_POST["subject"];
+  $topic = $_POST["subject"];
   $message = $_POST["message"];
 
   $recipientEmails = array(
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   );
 
   // Validate input data to prevent abuse
-  if (empty($firstName) || empty($lastName) || empty($email) || empty($telephone) || empty($subject) || empty($message)) {
+  if (empty($firstName) || empty($lastName) || empty($email) || empty($telephone) || empty($topic) || empty($message)) {
     echo "Please fill in all required fields.";
     exit;
   }
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   // Compose the email message
   $headers = "From: support_it1@pmvalve.com";
   $subject = "Contact Form Submission from PK Intercorp website";
-  $message = "First name: $firstName\nLast name: $lastName\nEmail: $email\nTelephone: $telephone\nSubject: $subject\nMessage: $message";
+  $message = "First name: $firstName\nLast name: $lastName\nEmail: $email\nTelephone: $telephone\nSubject: $topic\nMessage: $message";
 
   // Initialize a variable to track if the email was sent successfully
   $emailSent = true;

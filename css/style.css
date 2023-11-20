@@ -196,14 +196,15 @@ header {
   padding: 0;
   position: relative;
   width: 100%;
-  min-width: 33.6rem;
+  /* min-width: 33.6rem; */
 }
 
 .service-detail {
   color: #606060;
-  line-height: 2.4rem; /* 150% */
+  line-height: 2rem; /* 150% */
   text-align: left;
   font-weight: 300;
+  font-size: 1.4rem;
 }
 
 /********** Contact section ************/
