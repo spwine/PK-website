@@ -15,7 +15,7 @@ header {
 .hero-section {
   background: #070709;
   /* height: 100vh; */
-  min-height: 106rem;
+  /* min-height: 106rem; */
 }
 
 .hero {
@@ -79,6 +79,7 @@ header {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+  background-color: rgba(29, 29, 29, 0.4);
 }
 
 .btn::before {
@@ -86,7 +87,7 @@ header {
   position: absolute;
   inset: 0;
   border-radius: 8px;
-  padding: 1px;
+  padding: 0.5px;
   background: linear-gradient(
     130deg,
     #0feffd 3.48%,
@@ -338,12 +339,21 @@ footer {
   text-align: left;
   color: #fff;
   font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .contact-tel,
 .contact-email {
   text-decoration: none;
   color: #fff;
+  border-bottom: 1px solid #4caf50;
+}
+.contact-tel:hover,
+.contact-email:hover {
+  border-bottom: 1px solid transparent;
 }
 
 .footer-bottom {

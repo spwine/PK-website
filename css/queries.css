@@ -154,7 +154,7 @@
   }
 
   .service-section {
-    padding: 8.8rem 8rem;
+    padding: 8.8rem 8rem 10.4rem 8rem;
     max-width: 144rem;
     margin: 0 auto;
   }
@@ -180,7 +180,7 @@
   }
 
   .contact-head {
-    padding-bottom: 4rem;
+    padding-bottom: 5.6rem;
   }
 
   .contact-container {
@@ -201,6 +201,10 @@
 
   .info-head-container {
     padding-bottom: 9.6rem;
+  }
+
+  .info-header {
+    padding-bottom: 1.2rem;
   }
 
   .info-detail {
