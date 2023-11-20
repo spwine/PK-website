@@ -9,11 +9,12 @@ header {
   height: 2.8rem;
   margin: 3.6rem 0;
 }
+
 /********** Hero section ************/
 
 .hero-section {
   background: #070709;
-  height: calc(100vh - 102.5px);
+  height: 100vh;
 }
 
 .hero {
@@ -31,6 +32,9 @@ header {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+
+  width: 28rem;
+  margin: 0 auto;
 
   padding-bottom: 4rem;
 
@@ -53,6 +57,11 @@ header {
 
 .hero-body-text-top {
   padding-bottom: 2.4rem;
+}
+
+.hero-body-text-below {
+  width: 24rem;
+  margin: 0 auto;
 }
 
 .hero-btn-container {
@@ -101,4 +110,97 @@ header {
 
 .hero-img {
   width: 100%;
+}
+
+/********** Services section ************/
+
+.service-section {
+  padding: 5.6rem 2.8rem;
+}
+
+.service-header {
+  padding-bottom: 2.4rem;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  flex: none;
+  flex-wrap: nowrap;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.service-outside-layer {
+  border: 1px solid #dedede;
+  align-items: flex-start;
+  background-color: #f1f1f1;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 0 4rem;
+  position: relative;
+  transform: perspective(120rem);
+  will-change: var(--framer-will-change-override, transform);
+}
+
+.service-inside-layer {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 3.2rem;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 2.4rem 2.4rem 4rem;
+  position: relative;
+  transform: perspective(120rem);
+  will-change: var(--framer-will-change-override, transform);
+}
+
+.img-container {
+  width: 100%;
+  height: 23.6rem;
+}
+
+.service-img {
+  width: 100%;
+  border-radius: 1.2rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-text-container {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.service-detail {
+  color: #606060;
+  line-height: 2.4rem; /* 150% */
+
+  text-align: left;
 }
