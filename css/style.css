@@ -340,7 +340,7 @@ footer {
 
 .logo-footer {
   height: 3.2rem;
-  width: fit-content;
+  width: auto;
 }
 
 .copyright {
