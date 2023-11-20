@@ -252,12 +252,13 @@ textarea {
   outline: none; /* Remove default input focus outline */
 }
 
-input[type="submit"] {
+button[type="button"] {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   margin-top: 3.2rem;
   width: 16.8rem;
   border-radius: 4px;
+  border: #000;
   background: #000;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
   color: #fff;

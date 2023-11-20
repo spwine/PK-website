@@ -222,6 +222,10 @@
     margin-bottom: 4rem;
   }
 
+  label {
+    font-size: 1.6rem;
+  }
+
   input[type="submit"] {
     float: right;
     width: 20.8rem;
@@ -272,5 +276,9 @@
   .footer-bottom {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .logo-footer {
+    height: 5.6rem;
   }
 }

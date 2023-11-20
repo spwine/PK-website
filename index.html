@@ -14,6 +14,55 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>Document</title>
+
+    <script>
+      function submitForm() {
+        // Disable the submit button to prevent multiple submissions
+        document.querySelector(".submit-btn").disabled = true;
+
+        // Validate the form fields before submission
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var email = document.getElementById("email").value;
+        var telephone = document.getElementById("phone").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        if (
+          !firstName ||
+          !lastName ||
+          !email ||
+          !telephone ||
+          !subject ||
+          !message
+        ) {
+          alert("Please fill in all the required fields.");
+          document.querySelector(".submit-btn").disabled = false;
+          return;
+        }
+
+        // Send the form data to the server using fetch or XMLHttpRequest
+        fetch("form.php", {
+          method: "POST",
+          body: new FormData(document.getElementById("myForm")),
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            // Show the window popup with the response message
+            alert(data);
+
+            // Redirect back to the contact us page
+            window.location.href = "index.html";
+          })
+          .catch((error) => {
+            console.error("Error submitting form:", error);
+            alert("Failed to send the email.");
+            // Enable the submit button again in case of error
+            document.querySelector(".submit-btn").disabled = false;
+          });
+      }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <header>
@@ -156,6 +205,7 @@
                   <a href="tel:+6638685200" class="contact-tel"
                     >(+66)38-685-200</a
                   >
+                  <br />
                   <a href="tel:+66922936555" class="contact-tel"
                     >(+66)92-293-6555</a
                   >
@@ -176,15 +226,16 @@
                   alt="address icon"
                 />
                 <p class="info-detail">
-                  19/9 Muang Mai Maptaphut Sai-6 Road, T.Huaypong A.Muang
-                  Rayong, Rayong, Thailand 21150
+                  19/9 Muang Mai Maptaphut Sai-6 Road, <br />
+                  T.Huaypong, A.Muang Rayong, Rayong, <br />
+                  Thailand 21150
                 </p>
               </div>
             </div>
           </div>
 
           <div class="contact-form-container">
-            <form>
+            <form id="myForm" method="POST">
               <div class="form-col-desktop">
                 <div class="col-form">
                   <label for="firstName">First Name</label>
@@ -197,10 +248,10 @@
               </div>
 
               <div class="form-col-desktop">
-                <di class="col-form" v>
+                <div class="col-form">
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" required />
-                </di>
+                </div>
 
                 <div class="col-form">
                   <label for="phone">Phone Number</label>
@@ -218,8 +269,19 @@
                 rows="4"
                 required
               ></textarea>
-
-              <input type="submit" value="Send message" />
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LdPBRYpAAAAAHdacQiqUJ_rM2ACnAKQkrymBXQe"
+                style="margin-bottom: 2rem"
+              ></div>
+              <button
+                class="submit-btn g-recaptcha"
+                id="demo-form"
+                type="button"
+                onClick="submitForm()"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -254,7 +316,7 @@
             <div class="info">
               <img src="src/address.svg" class="info-icon" alt="address icon" />
               <p class="info-detail">
-                19/9 Muang Mai Maptaphut Sai-6 Road, T.Huaypong A.Muang Rayong,
+                19/9 Muang Mai Maptaphut Sai-6 Road, T.Huaypong, A.Muang Rayong,
                 Rayong, Thailand 21150
               </p>
             </div>
